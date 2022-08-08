@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopBox</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <div id="logo">
+                <i class="fab fa-affiliatetheme"></i>
+                <h2>Topbox</h2>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="/index.html"><i class="fas fa-th-large"></i><span>Dashboard</span></a></li>
+                    <li><a href="/transaction.html"><i class="fas fa-credit-card"></i><span>Transactions</span></a></li>
+                    <li><a href="#"><i class="fas fa-signal"></i><span>Statistics</span></a></li>
+                    <li><a href="#"><i class="fas fa-users"></i><span>Socials</span></a></li>
+                    <br>
+                    <li><a href="#"><i class="fas fa-cog"></i><span>Settings</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="body">
+            <div id="logs">
+                <div>
+                    <h4>Total Income</h4>
+                    <h5 style="color: rgb(123, 208, 123);">0000</h5>
+                </div> 
+                <div>
+                    <h4>Liquidity</h4>
+                    <h5 style="color: red;">0000</h5>
+                </div> 
+                <div>
+                    <h4>Total Profits</h4>
+                    <h5 style="color: rgb(123, 208, 123);">0000</h5>
+                </div> 
+                <div>
+                    <h4>Total Expenses</h4>
+                    <h5 style="color: red;">0000</h5>
+                </div> 
+            </div>
+            <div id="chart">
+                <div id="top">
+                    <h2>overview</h2>
+                    <select id="date">
+                        <option value="year">This Year</option>
+                        <option value="month">This Month</option>
+                        <option value="week">This Week</option>
+                        <option value="day">Daily</option>
+                    </select>
+                </div>
+                <canvas id="myChart"></canvas>
+            </div>
+            <div id="history">
+                <div id="top">
+                    <h2>Transaction History</h2>
+                    <table>
+                        <thead>
+                            <th>Last Transaction</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="title">payment</td>
+                                <td class="date">august</td>
+                                <td class="amt">000</td>
+                            </tr>
+                            <tr>
+                                <td class="title">payment</td>
+                                <td class="date">august</td>
+                                <td class="amt">000</td>
+                            </tr>
+                            <tr>
+                                <td class="title">payment</td>
+                                <td class="date">august</td>
+                                <td class="amt">000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="profile">
+                <img src="images/22-223941_transparent-avatar-png-male-avatar-icon-transparent-png.png"/>
+                <h3>Dlama</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <div id="card">
+                <div id="top">
+                    <h3>Current Balance</h3>
+                    <i class="fas fa-rss"></i>
+                </div>
+                <h1>0000</h1>
+                <div id="bottom">
+                    <h3>619586060589</h3>
+                    <i class="fas fa-circle"></i>
+                </div>
+            </div>
+            <div id="usage">
+                <h3>Average Usage</h3>
+                
+            </div>
+        </div>
+    </div>
+    <div id="transaction" style = 'display:none'></div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js" type="module" defer></script>
+</body>
+</html>

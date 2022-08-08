@@ -1,0 +1,180 @@
+body{
+    padding: 1rem;
+    margin: 0;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+    height: 41rem;
+}
+
+#container #left{
+    background: rgb(6, 44, 81);
+    border-radius: 10px 0 0 10px;
+    width: 18%;
+    color: #ffff;
+}
+#container #left #logo{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25%;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding-top: 3rem
+}
+#container #left #logo i{
+    font-size: 1.8rem;
+    padding: 0 8px;
+    color: #C1DEFE;
+}
+#container #left #menu{
+    padding: 2rem 0;
+}
+#container #left #menu ul{
+    position: absolute;
+    left: 0;
+}
+#container #left #menu ul li{
+    list-style: none;
+    margin: 2rem 0;
+    cursor: pointer;
+    padding: 0.8rem 1.5rem;
+    margin-left: -1.5rem;
+    border-radius:0 10px 10px 0;
+}
+#container #left #menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#container #left #menu ul li i{
+    margin-right: 1rem;
+}
+
+#container #left #menu ul li:hover{
+    background-color: rgb(13, 71, 129);
+}
+#container #left #menu ul li:hover a{
+    color: #6BCD6E;
+}
+#container #left #menu ul li:hover i{
+    color: #E89D40;
+}
+
+#container #body{
+    width: 60%;
+    padding: 1rem 0;
+}
+
+#container #body #logs{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+#container #body #logs div{
+    width: 20%;
+    height: 5rem;
+    box-shadow: -3px 3px 4px -4px rgba(112, 111, 111, 0.75);
+    text-align: center;
+    padding: -50rem 1rem;
+    border-radius: 4px;
+    line-height: 4px;
+}
+#container #body #logs div:nth-child(0){
+    background-color: rgb(6, 44, 81);
+}
+
+#container #body #chart{
+    width: 80%;
+    margin: 4rem auto;
+}
+
+#container #body #chart #top{
+    display: flex;
+    justify-content: space-between;
+}
+
+#container #body #chart select{
+    text-align: center;
+    width: 6rem;
+    height: 1.5rem;
+    margin: auto 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(207, 204, 204, 0.11);
+    box-shadow: -3px 3px 4px -4px rgba(112, 111, 111, 0.75);
+}
+
+#container #body #history{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#container #body #history h2{
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+#container #body #history table thead th{
+    width: 50%;
+    text-align: center;
+    font-weight: bolder;
+}
+#container #body #history table tbody tr{
+    text-align: center;
+}
+
+#container #right{
+    width: 22%;
+}
+
+#container #right #profile{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: right;
+    margin: 2rem 0;
+    margin-left: 50%;
+}
+#container #right #profile img{
+    width: 30%;
+    border-radius: 500px;
+}
+#container #right #profile h3{
+    width: 50%;
+    font-size: 0.8rem;
+}
+#container #right #profile i{
+    width: 20%;
+}
+#container #right #card{
+    width: 100%;
+    background: #9ec5ee;
+    border-radius: 1rem;
+    margin: 3rem 0;
+}
+#container #right #card #top{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+}
+#container #right #card #top h3{
+    font-size: 0.8rem;
+}
+#container #right #card h1{
+    width: 80%;
+    margin: 0 auto;
+}
+#container #right #card #bottom{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+

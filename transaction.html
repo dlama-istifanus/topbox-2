@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopBox</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="transac.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <div id="logo">
+                <i class="fab fa-affiliatetheme"></i>
+                <h2>Topbox</h2>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="/index.html"><i class="fas fa-th-large"></i><span>Dashboard</span></a></li>
+                    <li><a href="/transaction.html"><i class="fas fa-credit-card"></i><span>Transactions</span></a></li>
+                    <li><a href="#"><i class="fas fa-signal"></i><span>Statistics</span></a></li>
+                    <li><a href="#"><i class="fas fa-users"></i><span>Socials</span></a></li>
+                    <br>
+                    <li><a href="#"><i class="fas fa-cog"></i><span>Settings</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="body">
+            <div id="transaction-body">
+                <div id="bal">
+                    <h3>YOUR BALANCE</h3>
+                    <h1>#0</h1>
+                </div>
+                <div id="inputs">
+                    <div id="income">
+                        <h3>INCOME</h3>
+                        <h4>#0.00</h4>
+                    </div>
+                    <div id="expense">
+                        <h3>EXPENSE</h3>
+                        <h4>#0.00</h4>
+                    </div>
+                </div>
+                <div id="history">
+                    <h3>History</h3>
+                    <div id="records">
+                        
+                    </div>
+                    <button id="clear">clear all</button>
+                </div>
+                <div id="transaction">
+                    <h3>Add new transaction</h3>
+                    <h4>Text</h4>
+                    <input type="text" placeholder="Enter text..." id="txt-input"/>
+                    <h4>Amount <br> (negative - expense, positive - income)</h4>
+                    <select>
+                        <option value="green">Income</option>
+                        <option value="red">Expense</option>
+                    </select>
+                    <input type="number" placeholder="Enter Amount..." id="amount"/>
+                    <button id="add">Add transaction</button>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="profile">
+                <img src="images/22-223941_transparent-avatar-png-male-avatar-icon-transparent-png.png"/>
+                <h3>Dlama</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <div id="card">
+                <div id="top">
+                    <h3>Current Balance</h3>
+                    <i class="fas fa-rss"></i>
+                </div>
+                <h1>0000</h1>
+                <div id="bottom">
+                    <h3>619586060589</h3>
+                    <i class="fas fa-circle"></i>
+                </div>
+            </div>
+            <div id="usage">
+                <h3>Average Usage</h3>
+                
+            </div>
+        </div>
+    </div>    
+    <div id="dashboard" style = 'display:none'></div>
+    <script src="transac.js" type="module" defer></script>
+</body>
+</html>
